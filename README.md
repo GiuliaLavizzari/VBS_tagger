@@ -2,7 +2,14 @@
 
 ## useful links
 
+## bibliography
 
+* colour flow and hadronic decay tagging: [2112.09650](https://arxiv.org/abs/2112.09650)
+* Lund jet plane [1001.50270](https://arxiv.org/abs/1001.50270), [1903.02275](https://arxiv.org/abs/1903.02275), [1807.04758](https://arxiv.org/abs/1807.04758), [LU-TP-88-14](https://lib-extopc.kek.jp/preprints/PDF/1988/8811/8811323.pdf)  
+* Jet Dipolarity [1102.1012](https://arxiv.org/abs/1102.1012)
+* Jet Colour Ring [2006.10480](https://arxiv.org/abs/2006.10480)
+* The D2 variable [1409.6298](https://arxiv.org/abs/1409.6298)
+* 
 ## Madgraph environment setup on lxplus at cern
 
 ```
