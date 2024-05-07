@@ -9,7 +9,7 @@
 * Jet Dipolarity [1102.1012](https://arxiv.org/abs/1102.1012)
 * Jet Colour Ring [2006.10480](https://arxiv.org/abs/2006.10480)
 * The D2 variable [1409.6298](https://arxiv.org/abs/1409.6298)
-* 
+  
 ## Madgraph environment setup on lxplus at cern
 
 ```
