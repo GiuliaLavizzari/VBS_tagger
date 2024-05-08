@@ -27,3 +27,47 @@ install mg5amc_py8_interface
 ```
 
 
+## Run the shower and the analysis starting from LHE
+
+```bash
+source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc12-opt/setup.sh
+```
+Now you can compile `shower_ntuplizer.cc` in the analysis folder:
+```bash
+cd analysis/
+
+g++ shower_ntuplizer.cc -o shower_ntuplizer.exe -O2 -std=c++11 -pedantic -W  `pythia8-config --cxxflags --libs` `fastjet-config --cxxflags --libs --plugins`  `HepMC3-config --cxxflags --libs --plugins` `root-config --cflags --glibs`
+``` 
+In order to execute `shower_ntuplizer.exe` you have to pass it the path to a LHE file (e.g. `/afs/cern.ch/user/g/gpizzati/public/events.lhe`):
+
+```bash
+./shower_ntuplizer.exe events.lhe > out.txt
+``` 
+
+Now `tree.root` will be created containing a TTree Events containing the following collections
+
+* LHEPart:
+    * pt
+    * eta
+    * phi
+    * mass
+    * pdgId
+    * status (LHE status of a particle)
+
+* GenPart:
+    * pt
+    * eta
+    * phi
+    * mass
+    * pdgId
+
+* GenJet: clustered with anti-kT R=0.4 of all visible GenParticles
+    * pt
+    * eta
+    * phi
+    * mass
+
+
+* Map: mapping of each component of a GenJet to a GenPart
+    * genJetIdx
+    * genPartIdx

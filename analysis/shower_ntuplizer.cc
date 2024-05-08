@@ -1,4 +1,4 @@
-// source source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc12-opt/setup.sh
+// source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc12-opt/setup.sh
 // g++ shower_ntuplizer.cc -o shower_ntuplizer.exe -O2 -std=c++11 -pedantic -W  `pythia8-config --cxxflags --libs` `fastjet-config --cxxflags --libs --plugins`  `HepMC3-config --cxxflags --libs --plugins` `root-config --cflags --glibs`
 // ./shower_ntuplizer.exe events.lhe > out.txt
 
