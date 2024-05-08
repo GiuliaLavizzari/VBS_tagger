@@ -13,7 +13,8 @@
 ## Madgraph environment setup on lxplus at cern
 
 ```
-source /cvmfs/sft.cern.ch/lcg/views/LCG_99/x86_64-centos8-gcc10-opt/setup.sh
+# source /cvmfs/sft.cern.ch/lcg/views/LCG_99/x86_64-centos8-gcc10-opt/setup.sh
+source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc12-opt/setup.sh
 wget https://launchpad.net/mg5amcnlo/3.0/3.5.x/+download/MG5_aMC_v3.5.4.tar.gz
 tar xzf MG5_aMC_v3.5.4.tar.gz
 rm MG5_aMC_v3.5.4.tar.gz
